@@ -1,0 +1,1007 @@
+/* 
+
+
+#252B48
+#445069
+#a6a6a2
+
+*/
+
+
+
+/* --------    Start ==> Default     --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Righteous', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.section h2 {
+    position: relative;
+    font-size: 40px;
+    padding-bottom: 20px;
+    display: inline-block;
+    color: #252b48eb;
+    letter-spacing: 2px;
+}
+
+.section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3px;
+    width: 40%;
+    background-color: #252b48eb;
+    text-align: center;
+}
+/* --------    End ## Default     --------- */
+
+
+/* --------    Start ==> Header     --------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    overflow: hidden;
+    padding: 0 40px;
+    z-index: 10;
+    background-color: #252b48eb;
+}
+
+.header img {
+    width: 50px;
+    float: left;
+    padding-top: 5px;
+}
+
+.main-ul {
+    float: right;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.main-ul .active a,
+.main-ul li:hover a {
+    color: #fae64e;
+}
+
+.main-ul .active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+.main-ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+.main-ul li:hover::after {
+    width: 100%;
+}
+
+.main-ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+/* --------    End ## Header     --------- */
+
+
+/* --------    Start ==> Main Home     --------- */
+.main-home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/main-home.png);
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    width: 70%;
+    text-align: center;
+    background-color: #252b4888;
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.title h1 {
+    margin-top: 5px;
+    color: white;
+}
+
+.title p {
+    margin: 20px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.title .btn-home {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.title .learn {
+    background-color: #fae64e;
+}
+
+.title .get:hover {
+    background-color: rgba(255, 255, 255, 0.759);
+    letter-spacing: 1px;
+}
+
+.title .learn:hover {
+    background-color: #d4c23b;
+}
+/* --------    End ## Main Home     --------- */
+
+
+/* --------    Start ==> Section Welcome     --------- */
+.content {
+    overflow: hidden;
+    margin: 50px auto;
+    /* width: 70%; */
+}
+
+.content .box {
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    float: left;
+    margin-right: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    z-index: 3;
+}
+
+.content .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #252b483c;
+    transition: .4s;
+    border-radius: 12px;
+    opacity: 0;
+}
+
+.content .box:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.content .box i {
+    font-size: 40px;
+    transition: .5s;
+}
+
+.content .box i:hover {
+    color: #252b48be;
+}
+
+.content .box h3 {
+    padding: 15px 0 0;
+    font-weight: 500;
+}
+
+.content .box img {
+    width: 50%;
+}
+
+.content .box p {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.6;
+}
+
+.content .box a {
+    display: block;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3085C3;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    transition: .4s;
+}
+
+.content .box a:hover {
+    letter-spacing: 1px;
+}
+/* --------    End ## Section Welcome     --------- */
+
+
+/* --------    Start ==> Section Featured     --------- */
+.section.Featured {
+    background-color: #ced4da;
+    position: relative;
+}
+
+.portfolio {
+    padding-top: 30px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.box-feature {
+    position: relative;
+    width: 30%;
+    float: left;
+    padding: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+    height: 300px;
+}
+
+.box-feature.mid {
+    margin: 0 10px;
+}
+
+.box-feature img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.hover-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 0;
+    z-index: 3;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: .4s;
+    opacity: 0;
+}
+
+.description {
+    color: white;
+}
+
+.content-hover-box span {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+    transition: .5s;
+}
+
+.content-hover-box p {
+    margin-bottom: 20px;
+}
+
+.content-hover-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-hover-box i {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #252b48;
+    background-color: #fae64e;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.box-feature:hover .hover-box {
+    visibility: visible;
+    background-color: #252b48d4;
+    height: 100%;
+    opacity: .9;
+}
+/* --------    End ## Section Featured     --------- */
+
+
+/* --------    Start ==> Section services     --------- */
+.content-services {
+    padding-top: 50px;
+    margin: auto;
+    position: relative;
+}
+
+.box-services {
+    position: relative;
+    width: 31%;
+    float: left;
+    padding: 30px 20px 40px 60px;
+    overflow: hidden;
+    border: 1px solid gray;
+    margin-bottom: 25px;
+    z-index: 3;
+}
+
+.box-services::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #252b48d4;
+    transition: .4s;
+}
+
+.box-services:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.box-services.mid {
+    margin: 0 30px;
+}
+
+.box-services i {
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    font-size: 26px;
+    color: #3984aa;
+}
+
+.box-services h3 {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.box-services p {
+    position: relative;
+    color: #7f8182;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.box-services:hover i {
+    color: #fae64e;
+    z-index: 3;
+}
+
+.box-services:hover h3,
+.box-services:hover p {
+    z-index: 3;
+    color: white;
+}
+/* --------    End ## Section services     --------- */
+
+
+/* --------    Start ==> Section choose-us     --------- */
+.section.choose-us {
+    background-color: #ced4da;
+    position: relative;
+}
+
+.section.choose-us .container {
+    overflow: hidden;
+}
+
+.content-choose {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.content-choose h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.content-choose p {
+    text-transform: capitalize;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #5c5c5c;
+    margin-bottom: 20px;
+}
+
+.choose-ul li {
+    margin-bottom: 20px;
+}
+
+.choose-ul li i {
+    color: #3984aa;
+    margin-right: 10px;
+}
+
+.image-choose {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.image-choose img {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 10px;
+}
+
+.image-choose ul li {
+    display: inline-block;
+}
+
+.image-choose ul li a {
+    width: 12px;
+    height: 12px;
+    background-color: #252b48d4;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid #252b48d4;
+}
+
+.image-choose ul li a:hover,
+.image-choose ul li a.active {
+    background-color: #d4c23b7d;
+}
+/* --------    End ## Section choose-us     --------- */
+
+
+/* --------    Start ==> Section numbers     --------- */
+.section.numbers {
+    position: relative;
+    background-image: url("../images/numbers-03.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 450px;
+}
+
+.numbers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252b48d4;
+    margin: auto;
+}
+
+.icons {
+    margin-top: 150px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    width: 23%;
+    color: white;
+    z-index: 3;
+    border: 1px solid #fae64e;
+    padding: 20px;
+    transition: .4s;
+}
+
+.icons:hover {
+    background-color: #fae64e81;
+}
+
+.icons i {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fae64e;
+}
+
+.icons .num {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.icons span {
+    display: block;
+    text-transform: capitalize;
+}
+/* --------    End ## Section numbers     --------- */
+
+
+/* --------    Start ==> Section plans     --------- */
+.section pricing .plans {
+    width: 90%;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: hidden;
+    margin: auto;
+}
+
+.plans .basic {
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid #bfc7cf;
+    text-transform: uppercase;
+    float: left;
+    padding: 10px 30px;
+    width: 30%;
+    text-align: center;
+    margin: 50px auto;
+    z-index: 3;
+}
+
+.plans .basic::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #252b48c5;
+    transition: .5s;
+}
+
+.plans .title-price {
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.plans .price {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #343a40;
+    border-radius: 50%;
+    padding: 20px;
+    font-weight: bold;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+}
+
+.plans .number {
+    display: block;
+    font: normal bold 50px sans-serif;
+    color: #343a40;
+}
+
+.plans .content-price {
+    text-align: left;
+}
+
+.plans .content-price .check {
+    float: left;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.plans .content-price p {
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+
+.plans .choose .btn {
+    position: relative;
+    border: none;
+    background-color: #fae64e;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.plans .choose .btn:hover {
+    background-color: #e1cd31;
+}
+
+.basic.mid {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.plans .basic:hover::after {
+    height: 100%;
+}
+
+.plans .basic:hover .price span {
+    color: #fae64e;
+}
+
+.plans .basic:hover .price {
+    border: 1px solid #fae64e;
+}
+
+.plans .basic:hover .title-price,
+.plans .basic:hover .content-price,
+.plans .basic:hover .content-price,
+.plans .basic:hover .choose {
+    position: relative;
+    color: white;
+    z-index: 3;
+}
+/* --------    End ## Section plans     --------- */
+
+
+/* --------    Start ==> Section team     --------- */
+.about-team {
+    position: relative;
+    background-image: url(../images/team.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.about-team::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #252b48c5;
+}
+
+.about-team .person {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    z-index: 3;
+}
+
+.about-team .person .person-info {
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+.person .person-info .boximg {
+    position: relative;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 85px 30px 10px 110px;
+    text-transform: uppercase;
+}
+
+.person .person-info .boxp {
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.person .person-info p {
+    text-transform: capitalize;
+    line-height: 1.8;
+    margin-left: 40px;
+    font-size: 14px;
+    text-align: left;
+    background-color: #252b4894;
+    padding: 10px;
+    padding: 20px 10px;
+}
+
+.about-team .person .person-info img {
+    position: absolute;
+    width: 90px;
+    top: 75px;
+    left: 150px;
+    border-radius: 50%;
+    outline: 3px solid white;
+}
+
+.about-team .person .person-info h4 {
+color: white;
+}
+
+.about-team .person .person-info span {
+    color:  #fae64e;
+    font-size: 14px;
+}
+/* --------    End ## Section team     --------- */
+
+
+/* --------    Start ==> Section images-boxes     --------- */
+.images-boxes {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.images-boxes .box {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    float: left;
+    padding: 20px;
+    background-color: #252b484c;
+}
+
+.images-boxes .box.mid {
+    margin: 0 40px;
+}
+
+.images-boxes .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.27);
+}
+
+.images-boxes .box img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.images-boxes .box h4 {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.images-boxes .box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.images-boxes .box .box-icons {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: .3s;
+    background-color: #252b48bc;
+    z-index: 3;
+}
+
+.images-boxes .box .box-icons a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    color: #3085C3;
+}
+
+.images-boxes .box .box-icons i {
+    font-size: 30px;
+    color: white;
+}
+
+.images-boxes .box:hover .box-icons {
+    visibility: visible;
+    opacity: 1;
+}
+
+.images-boxes .box:hover::after {
+    height: 100%;
+    /* opacity: .5; */
+}
+/* --------    End ## Section images-boxes     --------- */
+
+
+/* --------    Start ==> Section news-boxes     --------- */
+.news-boxes {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.news-boxes .box {
+    position: relative;
+    width: 30%;
+    float: left;
+    padding: 20px;
+}
+
+.news-boxes .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #252b4829;
+    transition: .5s;
+}
+
+.news-boxes .box.mid{
+    margin: 0 40px
+}
+
+.news-boxes .box .news-info img{
+    width: 100%;
+}
+
+.news-boxes .box .news-icons {
+    text-align: left;
+    background-color: #252b4829
+}
+
+.news-boxes .box .news-icons li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.news-boxes .box .news-icons i {
+    color: #3085C3;
+}
+
+.news-boxes .box .news-icons .right{
+    float: right;
+}
+
+.news-boxes .box .news-icons .mid{
+    margin-left: 60px;
+
+}
+
+.news-boxes .box .news-icons span{
+    font-size: 12px;
+}
+
+.news-boxes .box h3 {
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.news-boxes .box .box-paragraph {
+    line-height: 1.4;
+    color: gray;
+}
+
+.news-boxes .box a {
+    z-index: 3;
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3085C3;
+}
+
+.news-boxes .box:hover::after{
+    height: 100%;
+}
+
+.news-boxes .box .news-contant {
+    text-align: left;
+    position: relative;
+    z-index: 3;
+}
+
+.news-boxes .box a:hover {
+    color: #f4f4f4 ;
+    letter-spacing: 1px;
+}
+/* --------    End ## Section news-boxes     --------- */
+
+
+/* --------    Start ==> footer     --------- */
+footer {
+    background-color: #252B48;
+}
+
+footer .social {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+footer .social img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .social li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer .social li a {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    padding: 10px ;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+footer .social li i {
+    line-height: 32px;
+    color: #fae64e;
+    font-size: 24px;
+
+}
+
+footer .social li .fa-facebook {
+    color: #1877f2;
+}
+footer .social li .fa-twitter {
+    color: #1da1f2;
+}
+footer .social li .fa-linkedin-in {
+    color: #0a66c2;
+}
+footer .social li .fa-instagram {
+    color: #1877f2;
+}
+footer .social li .fa-youtube {
+    color: #ff0000;
+}
+footer .social li .fa-google-plus-g {
+    color: #dd4b39;
+}
+
+footer .social li:hover a{
+    background-color: #252B48;
+}
+/* --------    End ## footer     --------- */
